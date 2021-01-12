@@ -2,10 +2,10 @@ package com.kaya.textstorecontroller.repository;
 
 import java.util.UUID;
 
-import org.springframework.data.cassandra.repository.CassandraRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.kaya.textstorecontroller.entity.Phrase;
 
-public interface PhraseRepository extends CassandraRepository<Phrase, UUID>{
+public interface PhraseRepository extends MongoRepository<Phrase, UUID>{
 
 }
